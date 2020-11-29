@@ -18,12 +18,17 @@ public class Ejemplo02 {
         entrada.useLocale(Locale.US);
         String cadenaFinal = "";
         double nota;
+        int suma = 0;
+        int prom = 0;
         boolean bandera = true;
+       
         String salida;
         do{
             System.out.println("Ingrese calificaciones");
             nota = entrada.nextDouble();
-            cadenaFinal = String.format("%s%.2f\n", cadenaFinal, nota);
+            prom= prom + suma/notas;
+            System.out.println("promedio:"+prom);
+            cadenaFinal = String.format("%s%.2f\n", cadenaFinal);
             entrada.nextLine(); // limpieza de buffer
             
             System.out.println("Ingrese (s) si desea salir del ciclo ");

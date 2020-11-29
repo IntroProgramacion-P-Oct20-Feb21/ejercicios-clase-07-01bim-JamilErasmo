@@ -28,7 +28,7 @@ public class Ejemplo03 {
             System.out.println("Ingrese (-111) si desea salir del ciclo ");
             salida = entrada.nextInt();
             
-            if (salida==-111) {
+            if (salida < -111) {
                 bandera = false;
             }
             
